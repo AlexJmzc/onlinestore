@@ -24,7 +24,14 @@ export const Main = () => {
           </div>
       </div>
 
-      <div className='h-max'>
+      <div className='h-max grid grid-cols-3 gap-y-10 justify-items-center'>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
+          <Card/>
           <Card/>
       </div>
     </>

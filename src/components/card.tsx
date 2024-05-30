@@ -10,7 +10,7 @@ export const Card = () => {
                 alt="Yuji" 
                 className="absolute inset-0 w-full h-full object-cover rounded-[40px]"
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-[rgba(208,195,195,0.5)] to-[rgb(227,16,16)] transition-opacity duration-500 opacity-0 rounded-[40px] group-hover:opacity-100"></div>
+            <div className="absolute inset-0 bg-gradient-to-b from-[rgba(208,195,195,0.5)] to-secondary transition-opacity duration-500 opacity-0 rounded-[40px] group-hover:opacity-100"></div>
             <div className="relative z-30 text-white opacity-0 transform translate-y-8 transition-opacity transition-transform duration-500 group-hover:opacity-100 group-hover:translate-y-0">
                 <h1 className="text-xl m-0">Yuji Itadori</h1>
                 <p className="tracking-wide text-sm my-2.5 leading-relaxed">
