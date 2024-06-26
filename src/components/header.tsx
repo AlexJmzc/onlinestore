@@ -13,7 +13,7 @@ export const Header = () => {
         </div>
 
         <div className='flex w-1/3 items-center justify-center'>
-            <img className='w-14 h-16' src={Logo} alt='Logo' />
+            <img className='w-12 h-16' src={Logo} alt='Logo' />
         </div>
 
         <div className='flex gap-x-2 w-1/3 justify-end mr-10 bg-transparent h-max'>
