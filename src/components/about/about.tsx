@@ -1,12 +1,16 @@
+import AboutImage from '../../assets/img/about.jpg';
 
 export const About = () => {
   return (
-    <div className='grid grid-cols-2 gap-x-6'>
-        <div className='bg-gray-950'>
-            <p>About us</p>
-        </div>
+    <div className='h-max grid grid-cols-2 gap-x-6 mt-10 justify-items-center'>
+        <img className='w-[300px] h-[400px] rounded-xl' src={AboutImage} alt='About' />
 
-        <img src='' alt='' />
+        <div className='bg-gray-950 w-[400px] h-[400px] rounded-lg'>
+            <div className='text-white flex flex-col py-8 px-10 gap-y-4'>
+              <h3 className='font-bold'>About us</h3>
+              <p>Description</p>
+            </div>
+        </div>
     </div>
   )
 }
