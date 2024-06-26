@@ -1,9 +1,13 @@
 import "tailwindcss/tailwind.css";
-import { Main } from './pages/main';
+import { MainPage } from './pages/mainPage';
+//import { AboutPage } from "./pages/aboutPage";
 
 function App() {
   return (
-      <Main/>
+    <>
+      <MainPage />
+      {/*<AboutPage />*/}
+    </>
   );
 }
 
