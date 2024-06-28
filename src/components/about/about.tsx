@@ -7,8 +7,8 @@ export const About = () => {
 
         <div className='bg-gray-950 w-[400px] h-[400px] rounded-lg'>
             <div className='text-white flex flex-col py-8 px-10 gap-y-4'>
-              <h3 className='font-bold'>About us</h3>
-              <p>Description</p>
+              <h3 className='font-bold'>Sobre Nosotros</h3>
+              <p>Descripción</p>
             </div>
         </div>
     </div>
