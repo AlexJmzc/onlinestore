@@ -1,6 +1,8 @@
 import Logo from '../assets/img/logo.png';
 
 export const Header = () => {
+    const token = sessionStorage.getItem("token");
+
   return (
     <div className='flex bg-transparent w-screen py-6 '>
         <div className='flex w-1/3 ml-10'>
@@ -20,9 +22,18 @@ export const Header = () => {
             <div className='flex items-center bg-white p-2 rounded-full'>
                 <span className="w-4 h-4 icon-[material-symbols--search]"></span>
             </div>
-            <div className='flex items-center bg-white p-2 rounded-3xl'>
-                <span className="w-4 h-4 icon-[mdi--cart-outline]"></span>
-            </div>
+
+            {
+                token ? 
+                <div className='flex items-center bg-white p-2 rounded-3xl'>
+                    <span className="w-4 h-4 icon-[mdi--cart-outline]"></span>
+                </div>
+                :
+                <div className='flex items-center bg-white p-2 rounded-3xl'>
+                    Iniciar Sesión
+                </div>
+            }
+            
         </div>
     </div>
   )
