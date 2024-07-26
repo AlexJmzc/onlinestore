@@ -1,12 +1,10 @@
 import "tailwindcss/tailwind.css";
-import { MainPage } from './pages/mainPage';
-//import { AboutPage } from "./pages/aboutPage";
+import { Navigation } from "./router/navigation";
 
 function App() {
   return (
     <>
-      <MainPage />
-      {/*<AboutPage />*/}
+      <Navigation />
     </>
   );
 }
