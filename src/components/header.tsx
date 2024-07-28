@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Logo from '../assets/img/logo.png';
 
 export const Header = () => {
@@ -7,10 +9,18 @@ export const Header = () => {
     <div className='flex bg-transparent w-screen py-6 '>
         <div className='flex w-1/3 ml-10'>
             <div className='flex gap-x-6 bg-white px-6 py-2 rounded-3xl font-medium h-max'>
-                <h2>Inicio</h2>
-                <h2>Productos</h2>
-                <h2>Información</h2>
-                <h2>Contacto</h2>
+                <h2>
+                    <Link to="/">Inicio</Link>
+                </h2>
+                <h2>
+                    <Link to="/products">Productos</Link>
+                </h2>
+                <h2>
+                    <Link to="/about">Información</Link>
+                    </h2>
+                <h2>
+                    <Link to="/contact">Contacto</Link>
+                </h2>
             </div>
         </div>
 
@@ -30,7 +40,7 @@ export const Header = () => {
                 </div>
                 :
                 <div className='flex items-center bg-white p-2 rounded-3xl'>
-                    Iniciar Sesión
+                    <Link to="/login">Iniciar Sesión</Link>
                 </div>
             }
             
